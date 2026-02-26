@@ -67,7 +67,6 @@ $('#product-list').onclick = function (e) {
             body: JSON.stringify({ id: productId, cat_id: newCatId })
         }).then(res => {
             if (res.ok) {
-                // Տեղափոխելուց հետո ապրանքը ջնջում ենք ներկա ցուցակից
                 btn.closest('.card').style.opacity = '0.5'
                 setTimeout(() => btn.closest('.card').remove(), 300)
             }
